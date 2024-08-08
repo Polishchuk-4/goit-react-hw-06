@@ -11,7 +11,7 @@ const getFilterContacts = (contacts, nameFilter) => {
   });
 };
 export default function ContactList() {
-  const contacts = useSelector((state) => state.contacts);
+  const contacts = useSelector((state) => state.contacts.items);
 
   const nameFilter = useSelector((state) => state.filters.name);
 
